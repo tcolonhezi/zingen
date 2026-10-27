@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit; /* Reset de fonte */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --brand-gradient: linear-gradient(135deg, #FC4A1A 0%, #F7B733 100%);
+  --brand-color-primary: #F7B733;
+  --brand-color-secondary: #FC4A1A;
+
+  --background-color: #09090B;
+  --surface-color: #18181B;
+  --stroke-color: #27272A;
+  --text-color-secondary: #A1A1AA;
+  --text-color-primary: #F4F4F5;
+
+  --ff-sans: 'Inter', system-ui, sans-serif;
+  --fw-base: 400;
+  --fw-md: 500;
+  --fw-bold: 800;
+
+  /* Tipografia Mobile (com base em 16px) */
+  --font-size-2xl: 2.5rem; /* 40px */
+  --font-size-xl: 1.5rem; /* 24px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --line-height-base: 160%;
+  --font-weight-mobile-paragraph: 400;
+}
+
+@media (width >= 1280px) {
+  :root { 
+  /* Tipografia Desktop (com base em 16px) */
+  --font-size-2xl: 4rem; /* 64px */
+  --font-size-xl: 3rem; /* 48px */
+  --font-size-lg: 2rem; /* 32px */
+  }
+}
+
+
+html { 
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--text-color-primary);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+h1, h2, h3 { 
+  line-height: 120%;
+  color: var(--text-color-primary);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.04em;
+}
+
+h1 { 
+  font-size: var(--font-size-2xl);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+}
+
+h3 { 
+  font-size: var(--font-size-lg);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul[role="list"] { 
+  list-style: none;
+}
