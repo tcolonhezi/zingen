@@ -11,6 +11,8 @@
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
 }
 
 :root {
@@ -65,6 +67,10 @@ html {
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   color: var(--text-color-primary);
+
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
 }
 
 body {

@@ -1,0 +1,60 @@
+#download{ 
+  
+  & .card { 
+    padding: 3rem 1.5rem 15rem;
+    position: relative;
+    & > img { 
+      position: absolute;
+      width: 14.5rem;
+      bottom:0;
+      right: -3.5rem;
+    }
+  }
+
+  .buttons { 
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+  }
+
+  & header { 
+
+    & p {
+    
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 160%;
+
+      color: var(--text-color-secondary);
+    }
+
+    & span { 
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      
+      font-weight: 500;
+      line-height: 100%;
+      letter-spacing: 0.08em;
+
+      color: #F7B733;
+    }
+  }
+
+  @media (width >= 80em) { 
+    & .card {
+      padding: 8.75rem 5rem;
+
+      & > div:nth-child(1) {
+        max-width: 45rem;
+      }
+
+      & > img { 
+        width: 29rem;
+        height: 39rem;
+        right: -48px;
+        bottom: 0;
+        filter: drop-shadow(16px 16px 64px rgba(0, 0, 0, 0.64));
+      }
+    }
+  }
+
+}
